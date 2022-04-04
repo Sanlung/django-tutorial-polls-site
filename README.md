@@ -8,13 +8,13 @@
 
 This Django app is completed following Django's official tutorial, [Writing your first Django app](https://docs.djangoproject.com/en/4.0/intro/tutorial01/). The tutorial walks a beginner through a series of seven parts in Django fundamentals, namely:
 
--   Part 1: Requests and responses
--   Part 2: Models and the admin site
--   Part 3: Views and templates
--   Part 4: Forms and generic views
--   Part 5: Testing
--   Part 6: Static files
--   Part 7: Customizing the admin site
+- Part 1: Requests and responses
+- Part 2: Models and the admin site
+- Part 3: Views and templates
+- Part 4: Forms and generic views
+- Part 5: Testing
+- Part 6: Static files
+- Part 7: Customizing the admin site
 
 The tutorial is completed to complement learning through the Columbia University's Justice Through Code, Spring 2022 program. Participants of JTC undergo an intensive of Python programming and app development using the Django framework. Though completion of this toturial is not required by the program, it has furthered my understanding of the topics taught by JTC and has given me extra practices on using the Django framework to create web applications.
 
@@ -44,10 +44,16 @@ To clone using SSH run the following command:
 $ git clone git@github.com:Sanlung/django-tutorial-polls-site.git <your_project_directory_name>
 ```
 
-In the same directory as `<your_local_project_name>/pollsite/pollsite/settings.py` file, create a `.env` file and save a secret key that you've generated, like so:
+In the same directory as `<your_local_project_name>/pollsite/pollsite/settings.py` file, create a `.env` file and, in it, save a secret key that you create. You may generate a key in the terminal like so:
 
-```.evn
-SECRET_KEY=<your_secret_key>
+```bash
+$ shasum<<<test
+```
+
+A hash will be generated and printed to the terminal, which you can use as the key and save it in the `.env` file, like so:
+
+```.env
+SECRET_KEY=<the_hash_you_generated>
 ```
 
 Create a Python virtual environment and activate it in your local project: (assuming you already have Python installed)
@@ -64,7 +70,7 @@ Install the packages from `requirements.txt`:
 $ pip install -r requirements.txt
 ```
 
-In the `pollsite` directory run the following command to start the server:
+In the `pollsite/` directory run the following command to start the server:
 
 ```bash
 $ cd pollsite
