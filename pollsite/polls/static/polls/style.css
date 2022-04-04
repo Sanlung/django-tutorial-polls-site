@@ -1,0 +1,21 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: rgb(39, 39, 39);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+            to left,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.8)
+        ),
+        url(images/background.jpg) top center / cover;
+}
+
+main {
+    max-width: 75em;
+    display: flex;
+    flex-flow: column;
+}
