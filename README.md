@@ -44,6 +44,12 @@ To clone using SSH run the following command:
 $ git clone git@github.com:Sanlung/django-tutorial-polls-site.git <your_project_directory_name>
 ```
 
+In the same directory as `<your_local_project_name>/pollsite/pollsite/settings.py` file, create a `.env` file and save a secret key that you've generated, like so:
+
+```.evn
+SECRET_KEY=<your_secret_key>
+```
+
 Create a Python virtual environment and activate it in your local project: (assuming you already have Python installed)
 
 ```bash
@@ -52,7 +58,7 @@ $ python3 -m venv venv
 $ . venv/bin/activate
 ```
 
-Install the packages in `requirements.txt`:
+Install the packages from `requirements.txt`:
 
 ```bash
 $ pip install -r requirements.txt
